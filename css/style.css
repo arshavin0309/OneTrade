@@ -25,7 +25,8 @@ h1 span {
     color: var(--green);
 }
 
-h2, .h2 {
+h2,
+.h2 {
     margin: 0;
     font-size: 40px;
     line-height: 140%;
@@ -499,7 +500,8 @@ option:hover {
     height: 15px;
 }
 
-.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 0 7px;
 }
 
@@ -507,22 +509,26 @@ option:hover {
     background: var(--green);
 }
 
-.swiper-button-prev, .swiper-rtl .swiper-button-next {
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
     top: auto;
     right: auto;
     left: 90px;
     bottom: 105px;
 }
 
-.swiper-button-next, .swiper-rtl .swiper-button-prev {
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
     top: auto;
     left: auto;
     right: 90px;
     bottom: 105px;
 }
 
-.swiper-button-prev, .swiper-rtl .swiper-button-next,
-.swiper-button-next, .swiper-rtl .swiper-button-prev {
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next,
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
     width: 30px;
     height: 30px;
     transition: var(--transition);
@@ -553,11 +559,13 @@ option:hover {
     border-radius: 50px;
 }
 
-.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
     display: none;
 }
 
-.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
     display: none;
 }
 
@@ -773,4 +781,56 @@ option:hover {
 
 .contacts__map iframe {
     border-radius: 50px;
+}
+
+.questions {
+    background: var(--light-blue);
+}
+
+.questions .container {
+    display: flex;
+    gap: 280px;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.questions__box {
+    max-width: 450px;
+}
+
+.questions__box h2 {
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form .btn {
+    margin-top: 10px;
+}
+
+input,
+textarea {
+    padding: 10px 20px;
+    background: var(--white);
+    border-radius: 10px;
+    border: 1px solid #DCDCDC;
+    color: var(--black);
+    font-size: 20px;
+    resize: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-size: 20px;
+    line-height: 140%;
+    color: #B0B0B0;
+}
+
+textarea {
+    height: 110px;
 }
