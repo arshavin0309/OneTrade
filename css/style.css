@@ -363,10 +363,13 @@ option:hover {
 
 .start__btn {
     position: absolute;
+    width: 70px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     bottom: 20px;
     right: 30px;
-    display: inline-block;
-    padding: 15px;
     border: 2px solid var(--green);
     border-radius: 40px;
     transition: var(--transition);
@@ -588,6 +591,7 @@ option:hover {
     text-align: center;
     transition: var(--transition);
     border-radius: 50%;
+    outline-color: #6293F226;
 }
 
 .about-us__item:nth-child(1) {
@@ -640,6 +644,7 @@ option:hover {
     left: 0;
     border-radius: 50%;
     transition: .25s ease-in-out all;
+    outline-color: #6293F226;
 }
 
 .about-us__item:hover::before {
@@ -649,6 +654,7 @@ option:hover {
 .about-us__item img {
     border-radius: 50%;
     transition: .3s ease-in-out all;
+    outline-color: #6293F226;
 }
 
 .about-us__item:hover img {
@@ -665,4 +671,34 @@ option:hover {
 
 .about-us__box p:not(:last-child) {
     margin-bottom: 20px;
+}
+
+.opportunities {
+    background: var(--light-blue);
+}
+
+.opportunities .container {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    justify-content: center;
+}
+
+.opportunities__img {
+    margin-top: -3%;
+}
+
+.opportunities__box h2 {
+    max-width: 700px;
+    margin-bottom: 20px;
+}
+
+.opportunities__box p {
+    max-width: 580px;
+    margin-bottom: 50px;
+}
+
+.contacts .container {
+    padding-top: 80px;
+    padding-bottom: 50px;
 }
