@@ -268,10 +268,11 @@ option:hover {
 }
 
 .room .container {
+    display: flex;
+    align-items: center;
+    gap: 90px;
     padding-top: 80px;
     padding-bottom: 80px;
-    display: flex;
-    gap: 90px;
 }
 
 .room__content {
@@ -395,6 +396,7 @@ option:hover {
     display: flex;
     gap: 85px;
     padding-top: 80px;
+    align-items: end;
 }
 
 .advantages__box {
@@ -402,7 +404,7 @@ option:hover {
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    margin-top: -80px;
+    padding-bottom: 80px;
 }
 
 .advantages h2 {
@@ -447,7 +449,7 @@ option:hover {
 }
 
 .analitycs__item {
-    min-height: 740px;
+    height: 620px;
     display: flex;
     gap: 30px;
     align-items: center;
@@ -554,4 +556,113 @@ option:hover {
 
 .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
     display: none;
+}
+
+.about-us .container {
+    display: flex;
+    justify-content: center;
+    gap: 180px;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.about-us__platform {
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.about-us__decoration img {
+    width: 555px;
+    height: 555px;
+}
+
+.about-us__list {
+    list-style: none;
+}
+
+.about-us__item {
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    text-align: center;
+    transition: var(--transition);
+    border-radius: 50%;
+}
+
+.about-us__item:nth-child(1) {
+    top: -68px;
+    left: 210px;
+}
+
+.about-us__item:nth-child(2) {
+    right: -44px;
+    top: 103px;
+}
+
+.about-us__item:nth-child(3) {
+    bottom: 21px;
+    right: 41px;
+}
+
+.about-us__item:nth-child(4) {
+    bottom: 21px;
+    left: 44px;
+}
+
+.about-us__item:nth-child(5) {
+    left: -43px;
+    top: 103px;
+}
+
+.about-us__item h4 {
+    color: var(--blue);
+    transition: var(--transition);
+    opacity: 0;
+}
+
+.about-us__item:hover h4 {
+    margin-top: 35px;
+    opacity: 1;
+}
+
+.about-us__item:hover {
+    outline: 10px solid #6293F226;
+}
+
+.about-us__item::before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    transition: .25s ease-in-out all;
+}
+
+.about-us__item:hover::before {
+    outline: 20px solid #6293F226;
+}
+
+.about-us__item img {
+    border-radius: 50%;
+    transition: .3s ease-in-out all;
+}
+
+.about-us__item:hover img {
+    outline: 30px solid #6293F226;
+}
+
+.about-us__box h2 {
+    margin-bottom: 50px;
+}
+
+.about-us__box p span {
+    color: var(--green);
+}
+
+.about-us__box p:not(:last-child) {
+    margin-bottom: 20px;
 }
