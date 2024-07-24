@@ -817,6 +817,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    max-width: 365px;
 }
 
 form .btn {
@@ -834,6 +835,11 @@ textarea {
     resize: none;
 }
 
+input:focus-visible,
+textarea:focus-visible {
+    outline-color: var(--green);
+}
+
 input::placeholder,
 textarea::placeholder {
     font-size: 20px;
@@ -843,6 +849,33 @@ textarea::placeholder {
 
 textarea {
     height: 110px;
+}
+
+input[type='checkbox'] {
+    display: none;
+}
+
+input[type='checkbox'] + span {
+    display: flex;
+    gap: 10px;
+    color: #C5C6C8;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+input[type='checkbox'] + span::before {
+    width: 28px;
+    height: 28px;
+    content: '';
+    display: block;
+    background: url(../img/checked.svg) var(--white) center / 19px no-repeat;
+    border: 1px solid #3C3C3C2B;
+    transition: var(--transition);
+    flex: 0 0 auto;
+}
+
+input[type='checkbox']:checked + span::before {
+    background: url(../img/checked.svg) var(--blue) center / 19px no-repeat;
 }
 
 footer .container {
@@ -975,4 +1008,24 @@ footer p:last-child {
         margin-left: -15px;
         margin-right: -15px;
     }
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--green) var(--light-blue);
+}
+
+*::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--light-blue);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--green);
+    border-radius: 35px;
+    border: 3px solid var(--light-blue);
 }
