@@ -1292,6 +1292,23 @@ footer p:last-child {
         grid-template-columns: 1fr 1fr;
         gap: 50px;
     }
+
+    .opportunities .container {
+        position: relative;
+        padding: 70px 30px;
+        gap: 0;
+    }
+
+    .opportunities__img {
+        position: absolute;
+        margin: 0;
+        bottom: -70px;
+        left: 0;
+    }
+
+    .opportunities__box {
+        padding-left: 40%;
+    }
 }
 
 @media (max-width: 768px) {

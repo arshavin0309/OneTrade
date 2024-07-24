@@ -281,7 +281,11 @@
 
         <section class="opportunities">
             <div class="container">
-                <div class="opportunities__img"><img src="/img/mac.png" alt=""></div>
+                <picture class="opportunities__img">
+                    <source media="(min-width: 1301px)" srcset="/img/mac.png">
+                    <source media="(max-width: 1300px)" srcset="/img/mac-tablet.png">
+                    <img src="/img/mac.png" alt="">
+                </picture>
                 <div class="opportunities__box">
                     <h2>Расширьте свои торговые возможности <span>вместе с OneTrade</span></h2>
                     <p>Начните инвестировать и&nbsp;изучите рынки со&nbsp;всеми торговыми преимуществами.</p>
