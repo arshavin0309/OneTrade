@@ -546,8 +546,10 @@ header .menu-item a {
 }
 
 .about-us__decoration img {
-    width: 555px;
-    height: 555px;
+    width: 100%;
+    height: 100%;
+    max-width: 555px;
+    max-height: 555px;
 }
 
 .about-us__list {
@@ -565,29 +567,41 @@ header .menu-item a {
 }
 
 .about-us__item:nth-child(1) {
-    top: -68px;
-    left: 210px;
+    width: 25%;
+    height: 25%;
+    left: 37%;
+    top: -12%;
 }
 
 .about-us__item:nth-child(2) {
-    right: -44px;
-    top: 103px;
+    width: 25%;
+    height: 25%;
+    right: -8%;
+    top: 18%;
 }
 
 .about-us__item:nth-child(3) {
-    bottom: 21px;
-    right: 41px;
+    width: 25%;
+    height: 25%;
+    bottom: 3%;
+    right: 1%;
 }
 
 .about-us__item:nth-child(4) {
-    bottom: 21px;
-    left: 44px;
+    width: 25%;
+    height: 25%;
+    bottom: 3%;
+    left: 1%;
 }
 
 .about-us__item:nth-child(5) {
-    left: -43px;
-    top: 103px;
+    width: 25%;
+    height: 25%;
+    left: -8%;
+    top: 18%;
 }
+
+
 
 .about-us__item h4 {
     color: var(--blue);
@@ -609,6 +623,8 @@ header .menu-item a {
 }
 
 .about-us__item img {
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     transition: .3s ease-in-out all;
     outline-color: #6293F226;
@@ -1076,10 +1092,6 @@ footer p:last-child {
     .about-us__platform {
         margin-left: 30px;
     }
-
-    .opportunities__img {
-        margin-left: 0;
-    }
 }
 
 @media (max-width: 1300px) {
@@ -1276,6 +1288,8 @@ footer p:last-child {
     }
 
     .about-us .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         gap: 50px;
     }
 }
