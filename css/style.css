@@ -23,6 +23,7 @@ h1 {
 
 h1 span {
     color: var(--green);
+    font-size: 70px;
 }
 
 h2,
@@ -352,7 +353,7 @@ header .menu-item a:hover {
 }
 
 .start__item:hover {
-    color: var(--white);
+    background: var(--white);
     border: 2px solid var(--blue)
 }
 
@@ -473,8 +474,13 @@ header .menu-item a:hover {
 .analitycs__top {
     display: flex;
     gap: 30px;
-    align-items: end;
+    align-items: start;
     margin-bottom: 20px;
+}
+
+.analitycs__item:nth-child(1) .analitycs__top,
+.analitycs__item:nth-child(3) .analitycs__top {
+    align-items: end;
 }
 
 .analitycs__number {
@@ -690,7 +696,7 @@ header .menu-item a:hover {
 }
 
 .opportunities {
-    background: var(--light-blue);
+    background: url(../img/opportunities-decor.png) var(--light-blue) center / contain no-repeat;
 }
 
 .opportunities .container {
@@ -765,6 +771,7 @@ header .menu-item a:hover {
     width: 32px;
     height: 32px;
     background: url(../img/phone-icon.svg) center / contain no-repeat;
+    flex: 0 0 auto;
 }
 
 .contacts__mail::before {
@@ -773,6 +780,7 @@ header .menu-item a:hover {
     width: 32px;
     height: 32px;
     background: url(../img/mail-icon.svg) center / contain no-repeat;
+    flex: 0 0 auto;
 }
 
 .contacts__address::before {
@@ -781,6 +789,7 @@ header .menu-item a:hover {
     width: 32px;
     height: 32px;
     background: url(../img/location-icon.svg) center / contain no-repeat;
+    flex: 0 0 auto;
 }
 
 .contacts__map {
@@ -968,9 +977,10 @@ footer p:last-child {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: start;
-    background: var(--blue);
+    background: var(--white);
+    border: 2px solid var(--blue);
     padding: 25px;
-    border-radius: 5px;
+    border-radius: 25px;
     color: var(--white);
 }
 
