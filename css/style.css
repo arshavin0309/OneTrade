@@ -162,7 +162,6 @@ header .menu-item a {
     width: calc(100% + 180px);
     justify-content: space-between;
     gap: 50px;
-    background: var(--light-blue);
     border-radius: 35px;
     background: url(../img/hero-decor.png) var(--light-blue) center / contain no-repeat;
 }
@@ -340,6 +339,7 @@ header .menu-item a {
     margin-bottom: 20px;
     font-size: 60px;
     color: var(--green);
+    font-weight: 275;
 }
 
 .start h3 {
@@ -1103,12 +1103,12 @@ footer p:last-child {
 
     h1,
     .h1 {
-        font-size: clamp(25px, 5vw, 50px);
+        font-size: 50px;
     }
 
     h1 span,
     .h1 span {
-        font-size: clamp(25px, 5vw, 50px);
+        font-size: 50px;
     }
 
     .hero__box {
@@ -1120,10 +1120,6 @@ footer p:last-child {
 
     .hero__box img {
         margin: auto;
-    }
-
-    p {
-        font-size: 15px;
     }
 
     .hero__content p {
@@ -1163,8 +1159,81 @@ footer p:last-child {
         gap: 25px;
     }
 
-    .about-us .container {
-        gap: 50px;
+    .room picture {
+        width: 100%;
+    }
+
+    .room img {
+        margin: auto;
+    }
+
+    h2,
+    .h2 {
+        font-size: 30px;
+    }
+
+    .room h2 {
+        margin-bottom: 10px;
+    }
+
+    .room p {
+        margin-bottom: 20px;
+    }
+
+    .room__content {
+        width: 100%;
+    }
+
+    .start h2 {
+        margin-bottom: 60px;
+    }
+
+    .start__list {
+        flex-direction: column;
+    }
+
+    .start__list::before {
+        display: none;
+    }
+
+    .start__item {
+        max-width: calc(100% - 160px);
+    }
+
+    .start__item:nth-child(2) {
+        position: relative;
+        margin-left: 160px;
+    }
+
+    .start__item:nth-child(2)::before {
+        z-index: -1;
+        position: absolute;
+        content: '';
+        top: -50px;
+        left: 170px;
+        width: 4px;
+        height: calc(100% + 100px);
+        background: var(--green);
+    }
+
+    .start__number {
+        margin-bottom: 10px;
+    }
+
+    .start__btn {
+        right: 60px;
+    }
+
+    .advantages .container {
+        gap: 0;
+    }
+
+    .advantages__item {
+        gap: 20px;
+    }
+
+    .advantages__item:not(:last-child) {
+        margin-bottom: 25px;
     }
 
     .analitycs__item {
@@ -1186,6 +1255,10 @@ footer p:last-child {
         align-items: end;
     }
 
+    .analitycs h2 {
+        margin-bottom: 60px;
+    }
+
     .analitycs .swiper-pagination {
         margin-top: 20px;
     }
@@ -1200,6 +1273,51 @@ footer p:last-child {
     .swiper-rtl .swiper-button-prev {
         right: 30px;
         bottom: 65px;
+    }
+
+    .about-us .container {
+        gap: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero__box {
+        background: url(../img/hero-decor-tablet.png) var(--light-blue) center top / contain no-repeat;
+    }
+
+    .style {
+        background: url(../img/style-bg-tablet.png) center / contain no-repeat;
+    }
+
+    .advantages__item::before {
+        width: 20px;
+        height: 20px;
+    }
+
+    .advantages__list {
+        max-width: 340px;
+    }
+
+    .advantages .btn {
+        max-width: 340px;
+        width: 100%;
+        text-align: center;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .advantages__item {
+        font-size: 15px;
+    }
+
+    .advantages img {
+        display: none;
+    }
+
+    .advantages .container {
+        background: url(../img/advantages-img.png) right 30px bottom / 305px 450px no-repeat;
     }
 }
 
