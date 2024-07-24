@@ -30,13 +30,17 @@
                 <li class="menu-item"><a href="#advantages">Преимущества</a></li>
                 <li class="menu-item"><a href="#start">Начать торговать</a></li>
             </ul>
-            <div class="header__btns">
-                <button class="btn singin">Войти</button>
-                <select class="header__select" name="" id="">
-                    <option value="RU">RU</option>
-                    <option value="EN">EN</option>
-                </select>
+            <div class="header__corner-box">
+                <div class="header__btns">
+                    <button class="btn singin">Войти</button>
+                    <select class="header__select" name="" id="">
+                        <option value="RU">RU</option>
+                        <option value="EN">EN</option>
+                    </select>
+                </div>
+                <button class="burger"></button>
             </div>
+            
         </div>
     </header>
     <main>
@@ -49,7 +53,11 @@
                         <a href="#" class="btn">Начать торговать</a>
                     </div>
                     <div>
-                        <img src="/img/iPad.png" alt="">
+                        <picture>
+                            <source media="(min-width: 1301px)" srcset="/img/iPad.png">
+                            <source media="(max-width: 1300px)" srcset="/img/iPad-tablet.png">
+                            <img src="/img/iPad.png" alt="">
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -94,9 +102,11 @@
 
         <section class="room">
             <div class="container">
-                <div>
+                <picture>
+                    <source media="(min-width: 1301px)" srcset="/img/room-bg.png">
+                    <source media="(max-width: 1300px)" srcset="/img/room-bg-tablet.png">
                     <img src="/img/room-bg.png" alt="">
-                </div>
+                </picture>
                 <div class="room__content">
                     <h2>Кабинет <span>трейдера</span></h2>
                     <p>Современный и удобный кабинет трейдера - здесь вы получите всю информацию о ваших торговых счетах. Операции и депозиты в одном месте.</p>
