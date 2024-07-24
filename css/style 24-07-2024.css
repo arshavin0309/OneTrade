@@ -670,19 +670,16 @@ header .menu-item a {
 }
 
 .contacts .container {
-    display: flex;
-
+    position: relative;
     padding-top: 80px;
     padding-bottom: 50px;
 }
 
 .contacts__box {
-    position: relative;
-    right: -90px;
-    width: calc(100% + 90px);
+    position: absolute;
+    top: 147px;
     max-width: 610px;
-    margin-top: 65px;
-    margin-bottom: 65px;
+    margin-left: 45px;
     padding: 40px;
     background: var(--white);
     box-shadow: 0px 0px 11px 1px #00000014;
@@ -743,8 +740,9 @@ header .menu-item a {
 }
 
 .contacts__map {
-    width: 100%;
     max-width: 820px;
+    margin-right: 45px;
+    margin-left: auto;
 }
 
 .contacts__map iframe {
