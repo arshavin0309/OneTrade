@@ -1431,6 +1431,21 @@ footer p:last-child {
         height: 28px;
     }
 
+    .questions .container {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    footer .container {
+        padding-top: 45px;
+    }
+
+    .footer__logo {
+        max-width: 140px;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+
     footer .menu {
         width: 100%;
         flex-direction: column;
