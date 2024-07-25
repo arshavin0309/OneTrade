@@ -1083,6 +1083,7 @@ footer p:last-child {
         width: 100%;
         margin-left: 0;
         margin-right: 0;
+        gap: 40px;
     }
 
     .analitycs .swiper {
@@ -1152,6 +1153,11 @@ footer p:last-child {
         margin-top: 0;
     }
 
+    .trading .container {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
     .style .container {
         padding-top: 70px;
         padding-bottom: 260px;
@@ -1170,10 +1176,13 @@ footer p:last-child {
 
     .room .container {
         gap: 25px;
+        align-items: start;
     }
 
     .room picture {
         width: 100%;
+        margin-top: 20px;
+        margin-left: -20px;
     }
 
     .room img {
