@@ -1101,6 +1101,10 @@ footer p:last-child {
         display: none;
     }
 
+    .header__logo {
+        max-width: 185px;
+    }
+
     .header__corner-box {
         display: flex;
         gap: 50px;
@@ -1145,6 +1149,10 @@ footer p:last-child {
         padding: 10px 75px;
     }
 
+    header .btn {
+        padding: 10px 30px;
+    }
+
     .hero__content h1 {
         margin-bottom: 10px;
     }
@@ -1163,7 +1171,7 @@ footer p:last-child {
         padding-bottom: 260px;
         flex-direction: column;
         gap: 0;
-        background: url(../img/MacBook.png) right calc(100% - 90px) / 570px no-repeat;
+        background: url(../img/MacBook.png) right calc(100% - 80px) / 570px no-repeat;
     }
 
     .style .btn {
@@ -1177,6 +1185,8 @@ footer p:last-child {
     .room .container {
         gap: 25px;
         align-items: start;
+        padding-top: 70px;
+        padding-bottom: 80px;
     }
 
     .room picture {
@@ -1206,6 +1216,11 @@ footer p:last-child {
         width: 100%;
     }
 
+    .start .container {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
     .start h2 {
         margin-bottom: 60px;
     }
@@ -1220,6 +1235,7 @@ footer p:last-child {
 
     .start__item {
         max-width: calc(100% - 160px);
+        padding: 30px 145px 30px 65px;
     }
 
     .start__item:nth-child(2) {
@@ -1243,11 +1259,16 @@ footer p:last-child {
     }
 
     .start__btn {
-        right: 60px;
+        right: 65px;
     }
 
     .advantages .container {
+        padding-top: 70px;
         gap: 0;
+    }
+
+    .advantages__box {
+        padding-bottom: 70px;
     }
 
     .advantages__item {
@@ -1256,6 +1277,11 @@ footer p:last-child {
 
     .advantages__item:not(:last-child) {
         margin-bottom: 25px;
+    }
+
+    .analitycs .container {
+        padding-top: 70px;
+        padding-bottom: 0;
     }
 
     .analitycs__item {
@@ -1301,7 +1327,8 @@ footer p:last-child {
     .about-us .container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 50px;
+        gap: 80px;
+        padding-bottom: 70px;
     }
 
     .opportunities .container {
@@ -1399,6 +1426,10 @@ footer p:last-child {
 
     .advantages .container {
         background: url(../img/advantages-img.png) right 30px bottom / 305px 450px no-repeat;
+    }
+
+    .about-us .container {
+        gap: 50px;
     }
 
     .contacts__box {
