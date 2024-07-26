@@ -973,6 +973,10 @@ footer p:last-child {
 .style .btn--mobile {
     display: none;
 }
+    
+.room .btn--mobile {
+    display: none;
+}
 
 
 
@@ -1759,6 +1763,19 @@ footer p:last-child {
     .style .btn--mobile {
         display: block;
         text-align: center;
+    }
+
+    .room .btn {
+        display: none;
+    }
+
+    .room .btn--mobile {
+        display: block;
+        text-align: center;
+    }
+
+    .room__list {
+        margin-bottom: 0;
     }
 }
 
