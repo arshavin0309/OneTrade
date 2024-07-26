@@ -69,4 +69,20 @@
     .analitycs__top {
         gap: 10px;
     }
+
+    .opportunities .btn {
+        display: none;
+    }
+
+    .opportunities .btn--mobile {
+        display: block;
+    }
+
+    .opportunities__box p {
+        margin-bottom: 20px;
+    }
+
+    .opportunities__img {
+        margin-bottom: 20px;
+    }
 }

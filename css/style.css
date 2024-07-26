@@ -18,10 +18,6 @@ body {
     overflow-x: hidden;
 }
 
-section {
-    overflow-x: hidden;
-}
-
 h1 {
     margin: 0;
     font-size: 60px;
@@ -230,6 +226,7 @@ header .menu-item a {
 }
 
 .style {
+    overflow-x: hidden;
     background: url(../img/style-bg.png) center / contain no-repeat;
 }
 

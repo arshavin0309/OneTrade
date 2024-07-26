@@ -248,7 +248,8 @@
 
     .opportunities .container {
         position: relative;
-        padding: 70px 30px;
+        padding-top: 70px;
+        padding-bottom: 70px;
         gap: 0;
     }
 

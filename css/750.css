@@ -191,4 +191,58 @@
         flex-direction: column-reverse;
         gap: 45px;
     }
+
+    .about-us__platform {
+        margin: 10%;
+        margin-top: 40px;
+    }
+
+    .opportunities .container {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        flex-direction: column-reverse;
+    }
+
+    .opportunities__img {
+        position: relative;
+        left: -15px;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .opportunities__box {
+        padding: initial;
+    }
+
+    .contacts__box {
+        max-width: 100%;
+        margin: 0 15px;
+        padding: 30px 20px;
+    }
+
+    .contacts__box p {
+        margin-bottom: 20px;
+    }
+
+    .contacts__info {
+        gap: 15px;
+    }
+
+    .contacts__map iframe {
+        height: 250px;
+    }
+
+    .contacts__map {
+        max-width: 100%;
+        margin: 0;
+        margin-top: -25px;
+    }
+
+    .contacts .container {
+        flex-direction: column;
+    }
+
+    .questions .container {
+        flex-direction: column;
+    }
 }
