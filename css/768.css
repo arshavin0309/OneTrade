@@ -1,0 +1,176 @@
+@media (max-width: 768px) {
+
+    h1,
+    .h1 {
+        font-size: clamp(25px, 7vw, 50px);
+    }
+
+    h1 span,
+    .h1 span {
+        font-size: clamp(25px, 7vw, 50px);
+    }
+
+    .hero__box {
+        background: url(../img/hero-decor-tablet.png) var(--light-blue) center top / contain no-repeat;
+    }
+
+    .style {
+        background: url(../img/style-bg-tablet.png) center / contain no-repeat;
+    }
+
+    .start h3 {
+        font-size: clamp(15px, 4vw, 25px);
+    }
+
+    .start__number {
+        font-size: clamp(40px, 8vw, 60px);
+    }
+
+    .advantages__item::before {
+        width: 20px;
+        height: 20px;
+    }
+
+    .advantages__list {
+        max-width: 340px;
+    }
+
+    .advantages .btn {
+        max-width: 340px;
+        width: 100%;
+        text-align: center;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .advantages__item {
+        font-size: 15px;
+    }
+
+    .advantages img {
+        display: none;
+    }
+
+    .advantages .container {
+        background: url(../img/advantages-img.png) right 30px bottom / 305px 450px no-repeat;
+    }
+
+    .about-us .container {
+        gap: 50px;
+    }
+
+    .contacts__box {
+        max-width: 360px;
+        padding: 30px;
+        border-radius: 20px;
+    }
+
+    .contacts__map {
+        margin-left: -15px;
+        max-width: 360px;
+    }
+
+    .contacts__map iframe {
+        height: 430px;
+        border-radius: 20px;
+    }
+
+    .contacts__box p {
+        margin-bottom: 25px;
+    }
+
+    .contacts__info a,
+    .contacts__info address {
+        font-size: 15px;
+    }
+
+    .contacts__tel::before {
+        width: 28px;
+        height: 28px;
+    }
+
+    .contacts__mail::before {
+        width: 28px;
+        height: 28px;
+    }
+
+    .contacts__address::before {
+        width: 28px;
+        height: 28px;
+    }
+
+    .questions .container {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    footer .container {
+        padding-top: 45px;
+    }
+
+    .footer__logo {
+        max-width: 140px;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+
+    footer .menu {
+        width: 100%;
+        flex-direction: column;
+        align-items: start;
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+
+    .footer__docs {
+        width: 100%;
+        gap: 15px;
+        flex-direction: column;
+        align-items: start;
+        margin-bottom: 30px;
+    }
+
+    footer p {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    footer p:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+    footer p:last-child {
+        margin-bottom: 0;
+    }
+
+    .copyright {
+        width: 100%;
+        margin-top: 25px;
+        margin-bottom: 0;
+        font-size: 14px;
+        text-align: left;
+    }
+
+    h2,
+    .h2 {
+        font-size: clamp(18px, 4vw, 30px);
+    }
+
+    .analitycs__number {
+        font-size: clamp(40px, 8vw, 60px);
+    }
+
+    .analitycs h2 {
+        margin-bottom: 40px;
+    }
+
+    .analitycs__item {
+        padding: 15px;
+    }
+
+    .analitycs__box h3 {
+        font-size: clamp(15px, 4vw, 25px);
+    }
+}

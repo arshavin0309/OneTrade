@@ -1,0 +1,22 @@
+@media (max-width: 1440px) {
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .hero__box {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        gap: 40px;
+    }
+
+    .analitycs .swiper {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .about-us__platform {
+        margin-left: 30px;
+    }
+}

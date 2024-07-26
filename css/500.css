@@ -1,0 +1,72 @@
+@media (max-width: 500px) {
+    .room__item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn {
+        display: block;
+        text-align: center;
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .cookies {
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cookies .btn {
+        width: calc(100% + 30px);
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .style .btn {
+        display: none;
+    }
+
+    .style .btn--mobile {
+        display: block;
+        text-align: center;
+    }
+
+    .room .btn {
+        display: none;
+    }
+
+    .room .btn--mobile {
+        display: block;
+        text-align: center;
+    }
+
+    .room__list {
+        margin-bottom: 0;
+    }
+
+    .advantages .btn {
+        display: none;
+    }
+
+    .advantages .btn--mobile {
+        display: block;
+        margin-top: -30px;
+    }
+
+    .advantages__list {
+        margin-bottom: 0;
+    }
+
+    .analitycs__top {
+        gap: 10px;
+    }
+}
