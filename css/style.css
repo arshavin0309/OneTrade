@@ -14,6 +14,14 @@
     font-family: 'Kanit', sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+}
+
+section {
+    overflow-x: hidden;
+}
+
 h1 {
     margin: 0;
     font-size: 60px;
@@ -210,6 +218,7 @@ header .menu-item a {
     margin-bottom: 20px;
     font-size: 90px;
     color: var(--black);
+    font-weight: 400;
 }
 
 .trading__number::after {
@@ -961,7 +970,9 @@ footer p:last-child {
     display: none;
 }
 
-
+.style .btn--mobile {
+    display: none;
+}
 
 
 
@@ -1168,10 +1179,11 @@ footer p:last-child {
 
     .style .container {
         padding-top: 70px;
-        padding-bottom: 260px;
+        /* padding-bottom: 260px; */
+        padding-bottom: 70px;
         flex-direction: column;
         gap: 0;
-        background: url(../img/MacBook.png) right calc(100% - 80px) / 570px no-repeat;
+        /* background: url(../img/MacBook.png) right calc(100% - 80px) / 570px no-repeat; */
     }
 
     .style .btn {
@@ -1179,7 +1191,13 @@ footer p:last-child {
     }
 
     .style img {
-        display: none;
+        /* display: none; */
+
+        max-width: 570px;
+        max-height: 340px;
+        margin-left: auto;
+        margin-top: -160px;
+        margin-right: -50px;
     }
 
     .room .container {
@@ -1389,12 +1407,31 @@ footer p:last-child {
 }
 
 @media (max-width: 768px) {
+
+    h1,
+    .h1 {
+        font-size: clamp(25px, 7vw, 50px);
+    }
+
+    h1 span,
+    .h1 span {
+        font-size: clamp(25px, 7vw, 50px);
+    }
+
     .hero__box {
         background: url(../img/hero-decor-tablet.png) var(--light-blue) center top / contain no-repeat;
     }
 
     .style {
         background: url(../img/style-bg-tablet.png) center / contain no-repeat;
+    }
+
+    .start h3 {
+        font-size: clamp(15px, 4vw, 25px);
+    }
+
+    .start__number {
+        font-size: clamp(40px, 8vw, 60px);
     }
 
     .advantages__item::before {
@@ -1452,7 +1489,8 @@ footer p:last-child {
         margin-bottom: 25px;
     }
 
-    .contacts__info a, .contacts__info address {
+    .contacts__info a,
+    .contacts__info address {
         font-size: 15px;
     }
 
@@ -1465,7 +1503,7 @@ footer p:last-child {
         width: 28px;
         height: 28px;
     }
-    
+
     .contacts__address::before {
         width: 28px;
         height: 28px;
@@ -1522,9 +1560,178 @@ footer p:last-child {
         font-size: 14px;
         text-align: left;
     }
+
+    h2,
+    .h2 {
+        font-size: clamp(18px, 4vw, 30px);
+    }
+}
+
+@media (max-width: 750px) {
+    .header .container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .hero__content h1 {
+        margin-bottom: 20px;
+    }
+
+    .hero__content p {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .hero__box {
+        padding-top: 45px;
+        border-radius: 15px;
+        gap: 20px;
+    }
+
+    .header__btns {
+        display: none;
+    }
+
+    .header__logo {
+        max-width: 110px;
+    }
+
+    .burger {
+        width: 21px;
+        height: 16px;
+    }
+
+    .trading__list {
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .trading .container {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .trading__list {
+        margin-top: 45px;
+    }
+
+    .trading__item {
+        min-width: initial;
+        max-width: 120px;
+    }
+
+    .trading__item:nth-child(2) {
+        order: 2;
+    }
+
+    .trading__number {
+        font-size: 70px;
+        margin-bottom: 10px;
+        font-weight: 300;
+    }
+
+    .style .container {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        gap: 30px;
+    }
+
+    .style img {
+        margin: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .room .container {
+        flex-direction: column-reverse;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .room h2 {
+        margin-bottom: 25px;
+    }
+
+    .room p {
+        margin-bottom: 30px;
+    }
+
+    .room__content {
+        margin-left: initial;
+    }
+
+    .room__list {
+        margin-bottom: 30px;
+    }
+
+    .room picture {
+        margin: auto;
+    }
+
+    .room img {
+        max-width: 100%;
+        margin-right: auto;
+    }
+
+    .start .container {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .start__list {
+        gap: 20px;
+    }
+
+    .start__item {
+        max-width: 100%;
+        padding: 15px;
+        padding-right: 90px;
+    }
+
+    .start h2 {
+        margin-bottom: 35px;
+    }
+
+    .start__item:nth-child(2) {
+        margin-left: initial;
+    }
+
+    .start__item:nth-child(2)::before {
+        left: 50%;
+        transform: translateX(-2px);
+    }
+
+    .start__btn {
+        right: 15px;
+        bottom: 15px;
+        width: 60px;
+        height: 40px;
+    }
 }
 
 @media (max-width: 500px) {
+    .room__item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn {
+        display: block;
+        text-align: center;
+        width: 100%;
+        font-size: 15px;
+    }
+
     .cookies {
         left: 20px;
         right: 20px;
@@ -1543,5 +1750,20 @@ footer p:last-child {
         width: calc(100% + 30px);
         margin-left: -15px;
         margin-right: -15px;
+    }
+
+    .style .btn {
+        display: none;
+    }
+
+    .style .btn--mobile {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media (max-width: 360px) {
+    .style p {
+        max-width: 315px;
     }
 }
