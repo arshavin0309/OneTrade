@@ -1,4 +1,8 @@
 @media (max-width: 500px) {
+    body.body-active {
+        margin-top: 91px;
+    }
+
     header.menu-active .container {
         z-index: 1;
         position: fixed;
@@ -13,14 +17,23 @@
         gap: 30px;
     }
 
-    header.menu-active .menu {
+    header .menu {
         display: flex;
+        flex-direction: column;
+        z-index: -1;
+        top: -100vh;
+        left: 0;
+        right: 0;
+    }
+
+    header.menu-active .menu {
+        z-index: 1;
         position: initial;
         background: none;
         padding: 0;
         border: none;
         border-radius: 0;
-        gap: 15px;
+        gap: 30px;
     }
 
     header.menu-active .header__btns {
@@ -145,5 +158,17 @@
     .opportunities__img {
         margin-bottom: 20px;
         margin-left: initial;
+    }
+
+    .start__item {
+        max-width: 100%;
+    }
+    
+    .start__item:nth-child(2) {
+        margin-left: initial;
+    }
+
+    .start__item:nth-child(2)::before {
+        left: 50%;
     }
 }

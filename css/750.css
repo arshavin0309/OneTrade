@@ -129,7 +129,6 @@
     }
 
     .start__item {
-        max-width: 100%;
         padding: 15px;
         padding-right: 90px;
     }
@@ -138,12 +137,7 @@
         margin-bottom: 35px;
     }
 
-    .start__item:nth-child(2) {
-        margin-left: initial;
-    }
-
     .start__item:nth-child(2)::before {
-        left: 50%;
         transform: translateX(-2px);
     }
 

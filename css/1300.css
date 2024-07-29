@@ -4,23 +4,25 @@
     }
     
     header .menu {
-        display: none;
-    }
-
-    header.menu-active .menu {
-        display: flex;
+        z-index: -1;
         position: absolute;
+        opacity: 0;
         flex-direction: column;
         top: 0;
         right: 0;
-        z-index: 1;
-        gap: 35px;
+        transition: var(--transition);
         justify-content: center;
         text-align: center;
+    }
+
+    header.menu-active .menu {
+        z-index: 1;
+        gap: 35px;
         padding: 90px 40px 30px;
         border: 1px solid #3C3C3C1F;
         background: var(--light-blue);
         border-radius: 15px 0 15px 15px;
+        opacity: 1;
     }
 
     header .menu::before {
@@ -199,6 +201,7 @@
         content: '';
         top: -50px;
         left: 170px;
+        left: 25%;
         width: 4px;
         height: calc(100% + 100px);
         background: var(--green);
