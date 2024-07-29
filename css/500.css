@@ -1,18 +1,43 @@
 @media (max-width: 500px) {
-    header.menu-active .menu {
+    header.menu-active .container {
+        z-index: 1;
         position: fixed;
+        top: 0;
+        left: 0;
         width: 100%;
         height: 100vh;
+        flex-direction: column;
+        background: var(--light-blue);
         justify-content: start;
+        padding-top: 70px;
+        gap: 30px;
+    }
+
+    header.menu-active .menu {
+        display: flex;
+        position: initial;
+        background: none;
+        padding: 0;
+        border: none;
         border-radius: 0;
+        gap: 15px;
+    }
+
+    header.menu-active .header__btns {
+        gap: 10px;
+    }
+
+    header.menu-active .header__logo {
+        display: none;
     }
 
     header.menu-active .header__btns {
         display: flex;
-        position: fixed;
-        z-index: 1;
-        bottom: 0;
-        left: 0;
+        flex-direction: column;
+    }
+
+    header.menu-active .burger {
+        display: none;
     }
 
     .room__item {

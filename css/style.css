@@ -134,6 +134,7 @@ header .container {
     font-weight: 300;
     color: #3C3C3C96;
     cursor: pointer;
+    background: none;
 }
 
 .header__select:focus {

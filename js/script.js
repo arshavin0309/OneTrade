@@ -90,10 +90,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelector('.burger').addEventListener('click', () => {
         header.classList.add('menu-active');
+        document.querySelector('body').style = 'margin-top: 91px'
         exitBtn.style = 'display: block'
 
         exitBtn.addEventListener('click', () => {
             header.classList.remove('menu-active');
+        document.querySelector('body').style = 'margin-top: 0'
             exitBtn.style = 'display: none'
         })
     });
@@ -101,6 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
     for (let i = 0; i < menuItems.length; i++) {
         menuItems[i].addEventListener('click', () => {
             header.classList.remove('menu-active');
+        document.querySelector('body').style = 'margin-top: 0'
             exitBtn.style = 'display: none'
         });
     };

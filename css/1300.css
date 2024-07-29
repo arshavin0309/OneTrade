@@ -1,4 +1,8 @@
 @media (max-width: 1300px) {
+    header .container {
+        height: 91px;
+    }
+    
     header .menu {
         display: none;
     }
