@@ -955,15 +955,13 @@ footer p:not(:last-child) {
     margin-bottom: 20px;
 }
 
-footer p:last-child {
-    margin-bottom: 50px;
-}
-
 footer .copyright {
     font-size: 16px;
     line-height: 140%;
     font-weight: 400;
     color: #B0B0B0;
+    margin-top: 30px;
+    margin-bottom: 0;
 }
 
 .cookies {
@@ -1102,7 +1100,7 @@ footer summary {
     transition: var(--transition);
 }
 
-footer summary::after {
+footer summary svg {
     content: '';
     display: block;
     width: 10px;
@@ -1117,8 +1115,12 @@ footer details[open] summary {
     text-decoration: underline;
 }
 
-footer details[open] summary::after {
+footer details[open] summary svg {
     transform: rotate(180deg);
+}
+
+footer details[open] summary svg path {
+    stroke: var(--black);
 }
 
 @media (min-width: 1200px) {
