@@ -83,4 +83,25 @@ document.addEventListener('DOMContentLoaded', () => {
             })
         })
     }
+
+    let header = document.querySelector('header');
+    let exitBtn = document.querySelector('header .exit');
+    let menuItems = document.querySelectorAll('header .menu-item');
+
+    document.querySelector('.burger').addEventListener('click', () => {
+        header.classList.add('menu-active');
+        exitBtn.style = 'display: block'
+
+        exitBtn.addEventListener('click', () => {
+            header.classList.remove('menu-active');
+            exitBtn.style = 'display: none'
+        })
+    });
+
+    for (let i = 0; i < menuItems.length; i++) {
+        menuItems[i].addEventListener('click', () => {
+            header.classList.remove('menu-active');
+            exitBtn.style = 'display: none'
+        });
+    };
 });

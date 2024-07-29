@@ -908,7 +908,7 @@ footer p:last-child {
     margin-bottom: 50px;
 }
 
-.copyright {
+footer .copyright {
     font-size: 16px;
     line-height: 140%;
     font-weight: 400;
@@ -992,6 +992,11 @@ footer p:last-child {
 
 .about-us__item:hover img {
     outline: 30px solid #6293F226;
+}
+
+.exit {
+    display: none;
+    cursor: pointer;
 }
 
 @media (min-width: 1200px) {
