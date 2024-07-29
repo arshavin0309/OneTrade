@@ -611,9 +611,13 @@ header .menu-item a {
 
 
 .about-us__item h4 {
+    z-index: 1;
+    position: relative;
     color: var(--blue);
     transition: var(--transition);
     opacity: 0;
+    font-size: clamp(13px, 3vw, 20px);
+    text-align: center;
 }
 
 .about-us__item::before {
@@ -972,6 +976,23 @@ footer p:last-child {
     display: none;
 }
 
+.about-us__item:hover h4 {
+    margin-top: 35px;
+    opacity: 1;
+}
+
+.about-us__item:hover {
+    outline: 10px solid #6293F226;
+}
+
+.about-us__item:hover::before {
+    outline: 20px solid #6293F226;
+}
+
+.about-us__item:hover img {
+    outline: 30px solid #6293F226;
+}
+
 @media (min-width: 1200px) {
     .btn:hover {
         color: var(--green);
@@ -1029,23 +1050,6 @@ footer p:last-child {
     .swiper-button-prev:hover svg,
     .swiper-button-next:hover svg {
         background: var(--green);
-    }
-
-    .about-us__item:hover h4 {
-        margin-top: 35px;
-        opacity: 1;
-    }
-
-    .about-us__item:hover {
-        outline: 10px solid #6293F226;
-    }
-
-    .about-us__item:hover::before {
-        outline: 20px solid #6293F226;
-    }
-
-    .about-us__item:hover img {
-        outline: 30px solid #6293F226;
     }
 
     footer .menu-item a:hover {
