@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 900px) {
 
     h1,
     .h1 {
@@ -24,6 +24,10 @@
 
     .start__number {
         font-size: clamp(40px, 8vw, 60px);
+    }
+
+    .advantages {
+        background: url(../img/advantages-decor-tablet.svg) var(--light-blue) center bottom / contain no-repeat;
     }
 
     .advantages__item::before {
@@ -59,6 +63,10 @@
 
     .about-us .container {
         gap: 50px;
+    }
+
+    .opportunities {
+        background: url(../img/opportunities-decor-tablet.svg) var(--light-blue) center / contain no-repeat;
     }
 
     .contacts__box {
@@ -99,6 +107,10 @@
     .contacts__address::before {
         width: 28px;
         height: 28px;
+    }
+
+    .questions {
+        background: url(../img/questions-decor-tablet.svg) var(--light-blue) center / contain no-repeat;
     }
 
     .questions .container {

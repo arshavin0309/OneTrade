@@ -684,7 +684,7 @@ header .menu-item a {
 
 .contacts .container {
     display: flex;
-
+    justify-content: center;
     padding-top: 80px;
     padding-bottom: 50px;
 }
