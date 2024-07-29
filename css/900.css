@@ -73,6 +73,10 @@
         background: url(../img/opportunities-decor-tablet.svg) var(--light-blue) center / contain no-repeat;
     }
 
+    .contacts .container {
+        padding-top: 100px;
+    }
+
     .contacts__box {
         max-width: 360px;
         padding: 30px;

@@ -193,4 +193,8 @@
     .error .container {
         align-items: center;
     }
+
+    .contacts .container {
+        padding-top: 60px;
+    }
 }
