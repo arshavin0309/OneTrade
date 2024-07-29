@@ -59,6 +59,10 @@
         background: url(../img/burger-logo.svg) center / contain no-repeat;
     }
 
+    header .menu-item a {
+        font-size: 16px;
+    }
+
     header .exit {
         position: absolute;
         z-index: 1;
