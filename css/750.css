@@ -78,15 +78,21 @@
     }
 
     .style img {
+        z-index: -1;
+        position: absolute;
+        right: 0;
+        bottom: 60px    ;
         margin: auto;
-        max-width: 100%;
-        max-height: 100%;
+        object-fit: contain;
+        max-width: 50%;
+        /* max-height: 100%; */
     }
 
     .room .container {
-        flex-direction: column-reverse;
         padding-top: 60px;
         padding-bottom: 60px;
+
+        flex-direction: row-reverse;
     }
 
     .room h2 {
@@ -110,7 +116,6 @@
     }
 
     .room img {
-        max-width: 100%;
         margin-right: auto;
     }
 
@@ -152,8 +157,7 @@
     .advantages .container {
         padding-top: 60px;
         padding-bottom: 60px;
-        flex-direction: column;
-        gap: 20px;
+        gap: 20px;  
         align-items: center;
         background: none;
     }
@@ -197,10 +201,14 @@
         margin-top: 40px;
     }
 
+    .about-us__decoration img {
+        max-width: 350px;
+        max-height: 350px;
+    }
+
     .opportunities .container {
         padding-top: 60px;
         padding-bottom: 60px;
-        flex-direction: column-reverse;
     }
 
     .opportunities__img {
@@ -208,6 +216,7 @@
         left: -15px;
         bottom: 0;
         width: 100%;
+        margin-left: -80px;
     }
 
     .opportunities__box {
@@ -245,5 +254,20 @@
 
     .questions .container {
         flex-direction: column;
+    }
+
+    .questions__box {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+        max-width: 100%;
+        align-items: start;
+    }
+
+    input, textarea {
+        width: 100%;
     }
 }

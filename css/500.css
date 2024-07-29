@@ -31,6 +31,12 @@
         margin-right: -15px;
     }
 
+    .style img {
+        position: initial;
+        transform: none;
+        max-width: 100%;
+    }
+
     .style .btn {
         display: none;
     }
@@ -38,6 +44,10 @@
     .style .btn--mobile {
         display: block;
         text-align: center;
+    }
+
+    .room .container {
+        flex-direction: column-reverse;
     }
 
     .room .btn {
@@ -51,6 +61,10 @@
 
     .room__list {
         margin-bottom: 0;
+    }
+
+    .advantages .container {
+        flex-direction: column;
     }
 
     .advantages .btn {
@@ -70,6 +84,10 @@
         gap: 10px;
     }
 
+    .opportunities .container {
+        flex-direction: column-reverse;
+    }
+
     .opportunities .btn {
         display: none;
     }
@@ -84,5 +102,6 @@
 
     .opportunities__img {
         margin-bottom: 20px;
+        margin-left: initial;
     }
 }

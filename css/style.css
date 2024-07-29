@@ -99,6 +99,7 @@ h6 {
 }
 
 .container {
+    position: relative;
     max-width: 1630px;
     padding-left: 100px;
     padding-right: 100px;
@@ -616,7 +617,7 @@ header .menu-item a {
     color: var(--blue);
     transition: var(--transition);
     opacity: 0;
-    font-size: clamp(13px, 3vw, 20px);
+    font-size: clamp(13px, 2vw, 20px);
     text-align: center;
 }
 
