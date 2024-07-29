@@ -107,4 +107,21 @@ document.addEventListener('DOMContentLoaded', () => {
             exitBtn.style = 'display: none';
         });
     };
+
+    // закрытие всех details при открытии нового details
+    const details = document.querySelectorAll("details");
+
+    details.forEach((detail) => {
+        detail.addEventListener("toggle", () => {
+            if (detail.open) setTargetDetail(detail);
+        });
+    });
+
+    function setTargetDetail(targetDetail) {
+        details.forEach((detail) => {
+            if (detail !== targetDetail) {
+                detail.open = false;
+            }
+        });
+    }
 });

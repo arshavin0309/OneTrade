@@ -1072,6 +1072,55 @@ footer .copyright {
     margin-top: 30px;
 }
 
+.for-mobile {
+    display: none;
+}
+
+footer p {
+    text-align: left;
+}
+
+footer details>summary {
+    list-style: none;
+}
+
+footer details>summary::-webkit-details-marker {
+    display: none;
+}
+
+footer details {
+    margin-bottom: 15px;
+}
+
+footer summary {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #B0B0B0;
+    font-size: 16px;
+    text-align: left;
+    transition: var(--transition);
+}
+
+footer summary::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 6px;
+    background: url(../img/arrow-bottom.svg) center / contain no-repeat;
+    transition: var(--transition);
+}
+
+footer details[open] summary {
+    margin-bottom: 10px;
+    color: var(--black);
+    text-decoration: underline;
+}
+
+footer details[open] summary::after {
+    transform: rotate(180deg);
+}
+
 @media (min-width: 1200px) {
     .btn:hover {
         color: var(--green);
