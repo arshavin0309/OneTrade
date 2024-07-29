@@ -26,6 +26,10 @@
         font-size: clamp(40px, 8vw, 60px);
     }
 
+    .start__item {
+        border-radius: 25px;
+    }
+
     .advantages {
         background: url(../img/advantages-decor-tablet.svg) var(--light-blue) center bottom / contain no-repeat;
     }

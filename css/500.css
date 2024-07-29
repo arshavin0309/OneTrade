@@ -53,6 +53,10 @@
         display: none;
     }
 
+    .hero__box {
+        background: url(../img/hero-decor-mobile.svg) var(--light-blue) center top / contain no-repeat;
+    }
+
     .room__item {
         width: 100%;
         text-align: center;
@@ -118,6 +122,10 @@
         margin-bottom: 0;
     }
 
+    .advantages {
+        background: url(../img/advantages-decor-mobile.svg) var(--light-blue) center / contain no-repeat;
+    }
+
     .advantages .container {
         flex-direction: column;
     }
@@ -162,6 +170,7 @@
 
     .start__item {
         max-width: 100%;
+        border-radius: 15px;
     }
     
     .start__item:nth-child(2) {
@@ -170,5 +179,9 @@
 
     .start__item:nth-child(2)::before {
         left: 50%;
+    }
+
+    .start__number {
+        margin-bottom: 20px;
     }
 }
