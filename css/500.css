@@ -122,6 +122,11 @@
         margin-bottom: 0;
     }
 
+    .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+    }
+
     .advantages {
         background: url(../img/advantages-decor-mobile.svg) var(--light-blue) center / contain no-repeat;
     }
@@ -183,5 +188,9 @@
 
     .start__number {
         margin-bottom: 20px;
+    }
+
+    .error .container {
+        align-items: center;
     }
 }

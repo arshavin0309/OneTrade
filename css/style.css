@@ -113,7 +113,22 @@ img {
     object-fit: contain;
 }
 
+header {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 117px;
+    background: var(--white);
+}
+
+body {
+    margin-top: 117px;
+}
+
 header .container {
+    height: inherit;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -228,7 +243,7 @@ header .menu-item a {
 }
 
 .style {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     background: url(../img/style-bg.png) center / contain no-repeat;
 }
 
@@ -238,6 +253,7 @@ header .menu-item a {
     display: flex;
     justify-content: space-between;
     gap: 80px;
+    overflow-x: hidden;
 }
 
 .style__box {
@@ -424,6 +440,39 @@ header .menu-item a {
     content: '';
     display: block;
     background: url(../img/v.svg) center / contain no-repeat;
+}
+
+#analitycs::before {
+    content: '';
+    display: block;
+    margin-top: -117px;
+    padding-top: 117px;
+    visibility: hidden;
+}
+
+#platform::before {
+    content: '';
+    display: block;
+    margin-top: -117px;
+    padding-top: 117px;
+    visibility: hidden;
+}
+
+#advantages::before {
+    content: '';
+    display: block;
+    margin-top: -117px;
+    padding-top: 117px;
+    /* visibility: hidden;; */
+    background: var(--white);
+}
+
+#start::before {
+    content: '';
+    display: block;
+    margin-top: -117px;
+    padding-top: 117px;
+    visibility: hidden;
 }
 
 .analitycs .container {
@@ -998,6 +1047,28 @@ footer .copyright {
 .exit {
     display: none;
     cursor: pointer;
+}
+
+.error {
+    background: url(../img/error-decor.svg) var(--light-blue) center / contain no-repeat;
+}
+
+.error .container {
+    min-height: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+}
+
+.error h1 {
+    font-size: clamp(25px, 9vw, 120px);
+    font-weight: 600;
+}
+
+.error .btn {
+    margin-top: 30px;
 }
 
 @media (min-width: 1200px) {
