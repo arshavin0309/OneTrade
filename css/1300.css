@@ -318,6 +318,24 @@
         padding-bottom: 70px;
     }
 
+    .about-us__item:nth-child(1) h4 {
+        margin-top: -80%;
+    }
+
+    .about-us__item:nth-child(1):hover h4 {
+        margin-left: 140%;
+    }
+
+    .about-us__item:nth-child(3) {
+        bottom: -3%;
+        right: 11%;
+    }
+
+    .about-us__item:nth-child(4) {
+        bottom: -3%;
+        left: 11%;
+    }
+
     .opportunities .container {
         position: relative;
         padding-top: 70px;
@@ -365,8 +383,8 @@
         left: 50%;
         transform: translateX(-50%);
         border-radius: 15px;
-        background: var(--white);
-        border: 1px solid var(--blue);
+        /* background: var(--white); */
+        /* border: 1px solid var(--blue); */
     }
 
     footer .menu-item a {
